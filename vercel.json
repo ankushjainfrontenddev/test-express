@@ -1,0 +1,19 @@
+{
+    "name": "express-starter",
+    "version": 2,
+    "builds": [
+        {
+            "src": "public/**/*",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "public/$1"
+        }
+    ],
+    "env": {
+        "NODE_ENV": "production"
+    }
+}
